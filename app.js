@@ -4,7 +4,7 @@ console.log("app.js loaded")
 function createMetadata(id) {
 
     // Read in the json data
-    d3.json("./samples.json").then((data) => {
+    d3.json("samples.json").then((data) => {
 
         console.log(data);
 
@@ -30,7 +30,7 @@ function createMetadata(id) {
 function createCharts(id) {
 
     // Read in the json data
-    d3.json("./samples.json").then((data) => {
+    d3.json("samples.json").then((data) => {
 
         // Filter the data to get the sample's OTU data
         var sampleMetadata = data.samples;
@@ -112,7 +112,7 @@ function init() {
     var selector = d3.select("#selDataset");
 
     // Read json data
-    d3.json("./samples.json").then((data) => {
+    d3.json("samples.json").then((data) => {
 
         // Filter data to get sample names
         var sampleNames = data.names;
